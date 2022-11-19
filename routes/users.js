@@ -5,7 +5,7 @@ var Mock = require('mockjs')
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  if (Math.random() > 0.8) {
+  if (Math.random() < 0.8) {
     res.json(success(Mock.mock({
       'array|1-50': [{
         'name': '@name',
