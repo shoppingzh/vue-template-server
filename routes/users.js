@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   if (Math.random() < 0.8) {
     res.json(success(Mock.mock({
       'array|1-50': [{
-        'name': '@name',
+        'name': '@cname',
         'age|1-100': 100
       }]
     }).array))
